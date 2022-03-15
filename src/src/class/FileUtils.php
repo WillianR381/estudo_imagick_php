@@ -13,7 +13,6 @@ class FileUtils{
         $this->upload_dir = dirname(__DIR__) . "/uploads/" ;
     }
 
-   
 
     public function moveToDirUpload(string $path_file, string $name_file): bool{
         
@@ -34,23 +33,27 @@ class FileUtils{
   
     // public function encodeBase64(string $path) : array {
     //     $data = null;
+    //     $msg = '';
     //     try{
     //         if(!is_file($path)){
     //             throw new \Exception("Not find the path");
+    //              $msg = "Caminho não encontrado";
     //         }
     //         $img = file_get_contents($path);
     //         $data = base64_encode($img);
+    //         $msg = "sucesso";
     //     } catch(\Exception $e){
     //         echo $e->getMessage();
+    //         $msg = "Erro";
     //     }
 
     //     return [
-    //         "" => "",
+    //         "msg" => $msg,
     //         "data" => $data,
     //     ];
     // }
 
-    // public function decodeBase64(string $encode) {
+    // public function decodeBase64(string $encode) : ?string {
     //     return base64_decode($encode);
     // }
 }
