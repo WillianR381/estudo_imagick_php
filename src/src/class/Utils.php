@@ -12,7 +12,7 @@ class  Utils{
     }
 
     public static function bytesToKb(int $bytes) : float{
-        $mb = $bytes / 1024; 
+        $mb = $bytes / 1000; 
         return number_format($mb, 3) ;
     }
 }

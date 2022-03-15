@@ -30,7 +30,7 @@ $size_img = Utils::bytesToKb($imagick->getImageSize());
 // $image_url = $imagick->getImageFilename(); 
 
 echo "<img  class=\"teste-img\" src=\"uploads/$name_file\" alt=\"Image\">";
-echo "<p>Size of image is $size_img kbs</p>";
+echo "<p>Size of image is $size_img kb/s</p>";
 
 $imagick->clear();
 
