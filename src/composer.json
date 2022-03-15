@@ -1,0 +1,14 @@
+{
+    "name": "estudo/image",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Estudo\\Image\\": "src/",
+            "Estudo\\Image\\Class\\" : "src/class/"
+        }
+    },
+    "require": {
+        "calcinai/php-imagick": "^0.1.2",
+        "guzzlehttp/guzzle": "^7.0"
+    }
+}
